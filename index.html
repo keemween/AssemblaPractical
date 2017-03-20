@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assembla Practical</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" id="bulma" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.2/css/bulma.min.css" />
+  <script type="text/javascript" src="main.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+  <section class="hero is-fullheight is-default is-bold diff-color">
+    <div class="hero-head">
+      <div class="container">
+        <nav class="nav">
+          <div class="container">
+            <div class="nav-left">
+              <a class="nav-item" href="index.html">
+                <img src="images/assembla-logo.png" alt="Assembla Logo">
+              </a>
+            </div>
+            <span class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <div class="nav-right nav-menu">
+              <a class="nav-item">
+                Login
+              </a>
+              <span class="nav-item">
+                <a class="button is-org">
+                  Find your organization
+                </a>
+                <a class="button is-signup">
+                  Sign up
+                </a>
+              </span>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    <div class="hero-body">
+      <div class="container">
+
+
+
+          <form id="signform">
+            <!-- fieldsets -->
+
+            <fieldset id="first">
+              <h1 class="title is-large">Accelerate with real-time project management today.</h1>
+              <h2 class="subtitle is-small">From tickets to cardwalls to planning &amp; communication tools, Assembla makes online collaboration easy.
+              </h2>
+              <input class="text_field" type="text" name="email" placeholder="Your business email address" />
+              <input id="next_btn1" class="action-button" onclick="next_step1()" type="button" value="LET'S GET STARTED">
+              <hr />
+              <h2 class="subtitle is-small small-links">or signup using: <i class="fa fa-google"></i> <i class="fa fa-github"></i> <i class="fa fa-slack"></i></</h2>
+            </fieldset>
+
+            <fieldset id="second">
+              <h1 class="title is-large">Let's get to know you</h2>
+              <h3 class="subtitle is-small">Your name is how you will be known in Assembla</h3>
+              <input class="text_field" type="text" name="fname" placeholder="First Name" />
+              <input class="text_field" type="text" name="lname" placeholder="Last Name" />
+              <input class="text_field" type="text" name="password" placeholder="Password" />
+              <p>Please use atleast 8 characters</p>
+              <input id="next_btn2" class="action-button" onclick="next_step2()" type="button" value="Next">
+            </fieldset>
+
+            <fieldset id="third">
+              <h2 class="title is-large">This is your place in the web</h2>
+              <h3 class="subtitle is-small">Your organization's name will be your home address</h3>
+              <input class="text_field" type="text" name="org-d" type="password" placeholder="organization-domain" />
+              <input id="next_btn3" class="action-button" onclick="next_step3()" type="button" value="Next">
+            </fieldset>
+
+            <fieldset id="fourth">
+              <h2 class="title is-large">Let's give it a name</h2>
+              <h3 class="subtitle is-small">Your new organization needs a name</h3>
+              <input class="text_field" type="text" name="fname" placeholder="Organization Name" />
+              <p>You can change this later</p>
+              <input id="next_btn4" class="action-button" onclick="next_step4()" type="button" value="Next">
+            </fieldset>
+
+            <fieldset id="fifth">
+              <h2 class="title is-large">Welcome</h2>
+              <h3 class="subtitle is-small">Create your name and password for your ABC COMPANY organization</h3>
+              <p>Your name is how you will be known in Assembla</p>
+              <input class="text_field" type="text" name="fname" placeholder="First Name" />
+              <input class="text_field" type="text" name="lname" placeholder="Last Name" />
+              <input class="text_field" type="text" name="password" placeholder="Password" />
+              <p>Please use atleast 8 characters</p>
+              <input class="submit_btn action-button" onclick="validation(event)" type="submit" value="Submit">
+            </fieldset>
+          </form>
+      </div>
+    </div>
+
+    </div>
+  </section>
+</body>
+</html>

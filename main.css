@@ -1,0 +1,97 @@
+
+
+.hero.diff-color {
+  background-color: #ECF4F5;
+}
+
+.button.is-org {
+  border-color: #77B2B0;
+  color: #77B2B0;
+}
+
+.button.is-signup {
+  background-color: #54B475;
+  color: #FFF;
+}
+
+.button.is-org:hover {
+  color: #537C7A;
+  background-color: #E9E9E9;
+}
+
+.button.is-signup:hover {
+  color: #E9E9E9;
+  background-color: #459C63;
+}
+
+.title.is-large {
+  font-size: 2.5em;
+  font-weight: bold;
+}
+
+.subtitle.is-small {
+  font-size: 1em;
+}
+
+.subtitle.is-small.small-links {
+  font-style: italic;
+  color: #537C7A;
+  font-size: 1em;
+}
+
+
+/*form styles*/
+#signform {
+	width: 400px;
+	margin: 50px;
+	text-align: left;
+}
+#signform fieldset {
+	border: 0 none;
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#signform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#signform input, #signform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#signform .action-button {
+	width: 400px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#signform .action-button:hover, #signform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 1.3;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 1em;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+/*Icons*/
